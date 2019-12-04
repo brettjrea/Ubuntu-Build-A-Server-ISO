@@ -1,5 +1,5 @@
 # Ubuntu-Build-A-Server-ISO
-A Linux script that takes a preseed file and bakes it into an Ubuntu ISO for unattended install and configuration.
+A Linux script that takes a preseed file and bakes it into a Ubuntu netinstaller ISO for unattended install and configuration of a minimal Ubuntu server.
 
 The preseed file is already configured to install a developer ready LAMPstack and can be used as is or adjusted as necessary.
 ***
