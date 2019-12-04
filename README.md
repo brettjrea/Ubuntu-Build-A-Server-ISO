@@ -1,4 +1,4 @@
-# Ubuntu-18.04-BuildserverISO
+# Ubuntu-Build-A-Server-ISO
 A Linux script that takes a preseed file and bakes it into an Ubuntu ISO for unattended install and configuration.
 
 The preseed file is already configured to install a developer ready LAMPstack and can be used as is or adjusted as necessary.
