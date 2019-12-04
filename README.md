@@ -2,11 +2,12 @@
 A Linux script that takes a preseed file and bakes it into an Ubuntu ISO for unattended install and configuration.
 
 The preseed file is already configured to install a developer ready LAMPstack and can be used as is or adjusted as necessary.
-
+***
 
 ## If you already have Ubuntu.
 If you already have Ubuntu up and running you can use the following command to install the dependencies needed to run the script.
 
+1.
 ```
 sudo apt install dos2unix p7zip-full cpio gzip genisoimage whois pwgen wget fakeroot isolinux xorriso
 ```
@@ -18,10 +19,22 @@ If you have Windows 10 but need a copy of Ubuntu you can use [Techintheclouds/Wi
 ## Once you have Ubuntu.
 Once you have a running copy of Ubuntu clone the repo to the desired directory with
 
+2.
 ```
 git clone https://github.com/Techintheclouds/Ubuntu-18.04-BuildserverISO.git
 ```
+***
 
+## Bake the Golden Image.
+Once you have the environment, dependencies and repository in place and you are ready to bake your golden image just run.
+
+3.
+```
+bash buildserver.sh
+```
+
+Enjoy!
+***
 
 ## Common adjustments you can make.
 
@@ -55,18 +68,14 @@ Edit preseed.cfg line 23 to desired IP Address.
 Edit preseed.cfg line 26 to desired DNS currently it is pointed to Google.
 
 ### Configure user.
-Edit preseed.cfg line 86
+Edit preseed.cfg line 86-91
 
+#### Set username.
+Edit preseed.cfg line 88 & 89 to desired username it's currently set as dev.
 
-
-## Bake the Golden Image.
-Once you have the environment, dependencies and repository in place and you are ready to bake your golden image just run.
-
-```
-bash buildserver.sh
-```
-
-Enjoy!
+#### Set password.
+Edit preseed.cfg line 90 this is currently set to password for easy testing, but can and should use an encrypted and salted password. Will contribute more instructions on that soon.
+***
 
 ### How I made it.
 I referenced heavily from [core-process/linux-unattended-installation](https://github.com/core-process/linux-unattended-installation) although that script didn't work for my setup out of the box so I had to research and make some changes. I eventually found what wasn't working for my setup changed it, pruned what I didn't deem necessary and studied the debconf output of an already installed installation to get some really detailed and intricate settings regarding setting up the LAMPstack and preseed file.
