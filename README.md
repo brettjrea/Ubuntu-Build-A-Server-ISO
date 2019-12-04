@@ -1,4 +1,7 @@
 # Ubuntu-Build-A-Server-ISO
+***
+
+## This is
 A Linux script that takes a preseed file and bakes it into a Ubuntu netinstaller ISO for unattended install and configuration of a minimal Ubuntu server.
 
 The preseed file is already configured to install a developer ready LAMPstack and can be used as is or adjusted as necessary see the [Wiki](https://github.com/Techintheclouds/Ubuntu-Build-A-Server-ISO/wiki/Welcome) for more details on common adjustments.
@@ -11,7 +14,7 @@ If you already have Ubuntu up and running you can use the following command to i
 ```
 sudo apt install dos2unix p7zip-full cpio gzip genisoimage whois pwgen wget fakeroot isolinux xorriso
 ```
-
+***
 
 ## If you have Windows 10 but need Ubuntu.
 If you have Windows 10 but need a copy of Ubuntu you can use [Techintheclouds/Windows-WSL-Ubuntu-LAMP-Wordpress](https://github.com/Techintheclouds/Windows-WSL-Ubuntu-LAMP-Wordpress) as a jump off point it automatically installs the required dependencies to run the script.
@@ -33,6 +36,6 @@ Once you have the environment, dependencies and repository in place and you are 
 ```
 bash buildserver.sh
 ```
+***
 
 Enjoy!
-***
