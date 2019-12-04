@@ -5,9 +5,9 @@ The preseed file is already configured to install a developer ready LAMPstack an
 ***
 
 ## If you already have Ubuntu.
-If you already have Ubuntu up and running you can use the following command to install the dependencies needed to run the script.
+If you already have Ubuntu up and running you can use the following command to install the software packages the script depends on.
 
-1.
+1. Install dependencies.
 ```
 sudo apt install dos2unix p7zip-full cpio gzip genisoimage whois pwgen wget fakeroot isolinux xorriso
 ```
@@ -19,16 +19,16 @@ If you have Windows 10 but need a copy of Ubuntu you can use [Techintheclouds/Wi
 ## Once you have Ubuntu.
 Once you have a running copy of Ubuntu clone the repo to the desired directory with
 
-2.
+2. Clone the repo.
 ```
 git clone https://github.com/Techintheclouds/Ubuntu-18.04-BuildserverISO.git
 ```
 ***
 
 ## Bake the Golden Image.
-Once you have the environment, dependencies and repository in place and you are ready to bake your golden image just run.
+Once you have the environment, dependencies and repository in place and you are ready to bake your golden image just run the script and it will download the netinstaller and inject the preseed file into the generated ISO.
 
-3.
+3. Bake the Golden Image.
 ```
 bash buildserver.sh
 ```
