@@ -22,7 +22,7 @@ Once you have a running copy of Ubuntu with the dependencies clone the repo to t
 
 2. Clone the repo.
 ```
-git clone https://github.com/Techintheclouds/Ubuntu-18.04-BuildserverISO.git
+git clone https://github.com/Techintheclouds/Ubuntu-Build-A-Server-ISO.git
 ```
 ***
 
