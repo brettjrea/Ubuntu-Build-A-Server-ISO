@@ -18,6 +18,7 @@ If you have Windows 10 but need a copy of Ubuntu you can use [Techintheclouds/Wi
 
 ## Once you have Ubuntu.
 Once you have a running copy of Ubuntu clone the repo to the desired directory with
+***
 
 2. Clone the repo.
 ```
