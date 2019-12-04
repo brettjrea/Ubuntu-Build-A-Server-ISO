@@ -12,6 +12,8 @@ sudo apt install dos2unix p7zip-full cpio gzip genisoimage whois pwgen wget fake
 
 
 If you have Windows 10 but need a copy of Ubuntu you can use [Techintheclouds/Windows-WSL-Ubuntu-LAMP-Wordpress](https://github.com/Techintheclouds/Windows-WSL-Ubuntu-LAMP-Wordpress) as a jump off point it automatically installs the required dependencies to run the script.
+
+
 Once you have a running copy of Ubuntu clone the repo with
 
 ```
@@ -20,7 +22,7 @@ git clone https://github.com/Techintheclouds/Ubuntu-18.04-BuildserverISO.git
 
 
 Once you have a local copy of the repo you can adjust the preseed file as needed.
-Then when you are ready to bake your Golden Image just run.
+Then when you are ready to bake your golden image just run.
 
 ```
 bash buildserver.sh
