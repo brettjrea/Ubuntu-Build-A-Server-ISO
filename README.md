@@ -1,5 +1,6 @@
 # Ubuntu-18.04-BuildserverISO
-A Linux script that takes a preseed file and bakes it into an Ubuntu ISO for unattended install and configuration. 
+A Linux script that takes a preseed file and bakes it into an Ubuntu ISO for unattended install and configuration.
+
 The preseed file is already configured to install a developer ready LAMPstack and can be used as is or adjusted as necessary.
 
 
@@ -32,4 +33,12 @@ bash buildserver.sh
 ```
 
 Enjoy!
+
+### How I made it.
+I referenced heavily from [core-process/linux-unattended-installation](https://github.com/core-process/linux-unattended-installation) although that repo didn't work for my setup out of the box so I had to research and make some changes. I leaned it down and refrenced other resources regarding preseed files on and off Github to get it working.
+
+
+### Why I made it.
+It was made from a desire to have a virtual machine that I can spin up quickly for web development purposes and couples well with my [Techintheclouds/Windows-Hyper-V-BuildVM](https://github.com/Techintheclouds/Windows-Hyper-V-BuildVM) repo.
+
 
