@@ -23,7 +23,23 @@ git clone https://github.com/Techintheclouds/Ubuntu-18.04-BuildserverISO.git
 ```
 
 
-*Once you have a local copy of the repo you can adjust the preseed file as needed.*
+## Adjustments you can make.
+
+### Change the release.
+
+*I prefer to change the following three of these together, although in theory the preseed file can tell the netinstaller what release to download.*
+
+#### Change ISO release via net installer source url.
+
+Edit buildserver.sh line 15 from bionic to desired release codename such as bionic, disco, eoan.
+
+#### Change release via preseed.
+
+Edit preseed.cfg line 39 with release codename such as bionic, disco, eoan.
+
+#### Change the kernal.
+
+Edit preseed.cfg line 207 with your desired kernal, you should change the version number to match the release and is typically all you need if you plan to keep it virtualized. Otherwise do your due diligence when choosing a kernal.
 
 ## Bake the Golden Image.
 Once you have the environment, dependencies and repository in place and you are ready to bake your golden image just run.
