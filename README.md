@@ -67,8 +67,7 @@ Edit preseed.cfg line 23 to desired IP Address.
 #### Change DNS servers.
 Edit preseed.cfg line 26 to desired DNS currently it is pointed to Google.
 
-### Configure user.
-Edit preseed.cfg line 86-91
+### Configure user preseed.cfg lines 86-91.
 
 #### Set username.
 Edit preseed.cfg line 88 & 89 to desired username it's currently set as dev.
@@ -78,8 +77,8 @@ Edit preseed.cfg line 90 this is currently set to password for easy testing, but
 ***
 
 ### How I made it.
-I referenced heavily from [core-process/linux-unattended-installation](https://github.com/core-process/linux-unattended-installation) although that script didn't work for my setup out of the box so I had to research and make some changes. I eventually found what wasn't working for my setup changed it, pruned what I didn't deem necessary and studied the debconf output of an already installed installation to get some really detailed and intricate settings regarding setting up the LAMPstack and preseed file.
+I referenced heavily from [core-process/linux-unattended-installation](https://github.com/core-process/linux-unattended-installation) although that script didn't work for my setup out of the box so I had to research it and understand it, I eventually found what wasn't working for my setup was able to change it, pruned what I didn't deem necessary and studied the debconf output of an already installed system to get some really detailed and intricate settings regarding setting up the LAMPstack and preseed file.
 
 
 ### Why I made it.
-It was made from a desire to have a virtual machine that I can spin up quickly for web development pursuits but also have a detailed breakdown of how to configure a LAMPstack that I could reference in the future or use to help others learn. I also built a powershell script that can be pointed to the generated ISO from this script to build a Hyper-V machine quickly that spins up and installs Ubuntu you can find that at [Techintheclouds/Windows-Hyper-V-BuildVM](https://github.com/Techintheclouds/Windows-Hyper-V-BuildVM).
+It was made from a desire to have a virtual machine that I can spin up quickly for web development pursuits but also have a detailed breakdown of how to configure a LAMPstack that I could reference in the future or use to help others learn. I also built a powershell script that can be pointed to the generated ISO from this script to build a preconfigured Hyper-V Virtual Machine on Windows 10 that will spin up and install the preseeded Ubuntu, you can find that at [Techintheclouds/Windows-Hyper-V-BuildVM](https://github.com/Techintheclouds/Windows-Hyper-V-BuildVM).
