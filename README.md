@@ -23,7 +23,7 @@ git clone https://github.com/Techintheclouds/Ubuntu-18.04-BuildserverISO.git
 ```
 
 
-## Adjustments you can make.
+## Common adjustments you can make.
 
 ### Change the release.
 
@@ -32,6 +32,7 @@ git clone https://github.com/Techintheclouds/Ubuntu-18.04-BuildserverISO.git
 #### Change ISO release via net installer source url.
 
 Edit buildserver.sh line 15 from bionic to desired release codename such as bionic, disco, eoan.
+*This is the only thing to edit in the script and as stated above in theory isn't completely necessary.*
 
 #### Change release via preseed.
 
@@ -40,6 +41,23 @@ Edit preseed.cfg line 39 with release codename such as bionic, disco, eoan.
 #### Change the kernal.
 
 Edit preseed.cfg line 207 with your desired kernal, you should change the version number to match the release and is typically all you need if you plan to keep it virtualized. Otherwise do your due diligence when choosing a kernal.
+
+
+### Configure networking preseed.cfg lines 17-27.
+
+#### Change Hostname.
+Edit preseed.cfg line 20 & 22 with desired hostname.
+
+#### Change static IP Address.
+Edit preseed.cfg line 23 to desired IP Address.
+
+#### Change DNS servers.
+Edit preseed.cfg line 26 to desired DNS currently it is pointed to Google.
+
+### Configure user.
+Edit preseed.cfg line 86
+
+
 
 ## Bake the Golden Image.
 Once you have the environment, dependencies and repository in place and you are ready to bake your golden image just run.
@@ -51,10 +69,8 @@ bash buildserver.sh
 Enjoy!
 
 ### How I made it.
-I referenced heavily from [core-process/linux-unattended-installation](https://github.com/core-process/linux-unattended-installation) although that repo didn't work for my setup out of the box so I had to research and make some changes. I leaned it down and refrenced other resources regarding preseed files on and off Github to get it working.
+I referenced heavily from [core-process/linux-unattended-installation](https://github.com/core-process/linux-unattended-installation) although that script didn't work for my setup out of the box so I had to research and make some changes. I eventually found what wasn't working for my setup changed it, pruned what I didn't deem necessary and studied the debconf output of an already installed installation to get some really detailed and intricate settings regarding setting up the LAMPstack and preseed file.
 
 
 ### Why I made it.
-It was made from a desire to have a virtual machine that I can spin up quickly for web development purposes and couples well with my [Techintheclouds/Windows-Hyper-V-BuildVM](https://github.com/Techintheclouds/Windows-Hyper-V-BuildVM) repo.
-
-
+It was made from a desire to have a virtual machine that I can spin up quickly for web development pursuits but also have a detailed breakdown of how to configure a LAMPstack that I could reference in the future or use to help others learn. I also built a powershell script that can be pointed to the generated ISO from this script to build a Hyper-V machine quickly that spins up and installs Ubuntu you can find that at [Techintheclouds/Windows-Hyper-V-BuildVM](https://github.com/Techintheclouds/Windows-Hyper-V-BuildVM).
