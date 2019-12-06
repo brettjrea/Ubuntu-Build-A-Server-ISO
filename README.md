@@ -4,7 +4,7 @@
 ## A Linux script and developer ready preseed.cfg for fast deployment.
 This is a linux script that takes a preseed file and bakes it into a Ubuntu netinstaller ISO for unattended install and configuration of a minimal Ubuntu server.
 
-The preseed file is already configured to install a developer ready LAMPstack and can be used as is or adjusted as necessary see the [Wiki](https://github.com/Techintheclouds/Ubuntu-Build-A-Server-ISO/wiki/Welcome) for more details on common adjustments.
+The preseed file is already configured to install a developer ready classic LAMPstack (Apache, MySQL, PHP) and can be used as is for development as is or adjusted as necessary see the [Wiki](https://github.com/Techintheclouds/Ubuntu-Build-A-Server-ISO/wiki/Welcome) for more details on common adjustments.
 ***
 
 ## If you already have Ubuntu.
