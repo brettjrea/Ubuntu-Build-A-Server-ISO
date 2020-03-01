@@ -1,11 +1,11 @@
-# Ubuntu-Build-A-Server-ISO
+# Ubuntu_Build_A_Server_ISO
 ***
-[GitHub:Ubuntu-Build-A-Server-ISO](https://github.com/brettjrea/Ubuntu-Build-A-Server-ISO)
+[GitHub:Ubuntu_Build_A_Server_ISO](https://github.com/brettjrea/Ubuntu_Build_A_Server_ISO)
 
 ## A Linux script and developer ready preseed.cfg for fast deployment.
 This is a linux script that takes a preseed file and bakes it into a Ubuntu netinstaller ISO for unattended install and configuration of a minimal Ubuntu server.
 
-The preseed file is already configured to install a developer ready classic LAMPstack (Apache, MySQL, PHP) and can be used as is for development as is or adjusted as necessary see the [Wiki](https://github.com/brettjrea/Ubuntu-Build-A-Server-ISO/wiki/Welcome) for more details on common adjustments.
+The preseed file is already configured to install a developer ready classic LAMPstack (Apache, MySQL, PHP) and can be used as is for development as is or adjusted as necessary see the [Wiki](https://github.com/brettjrea/Ubuntu_Build_A_Server_ISO/wiki/Welcome) for more details on common adjustments.
 ***
 
 ## If you already have Ubuntu.
@@ -26,7 +26,7 @@ Once you have a running copy of Ubuntu with the dependencies clone the repo to t
 
 2. Clone the repo.
 ```
-git clone https://github.com/brettjrea/Ubuntu-Build-A-Server-ISO.git
+git clone https://github.com/brettjrea/Ubuntu_Build_A_Server_ISO.git
 ```
 ***
 
